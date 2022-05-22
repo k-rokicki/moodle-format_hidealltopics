@@ -462,7 +462,7 @@ class format_hidealltopics extends format_base {
             $params = array('idnumber' => $idnumber);
         } else if (!empty($id)) {
             $params = array('id' => $id);
-        }else {
+        } else {
             print_error('unspecifycourseid', 'error');
         }
 
@@ -514,7 +514,7 @@ function format_hidealltopics_inplace_editable($itemtype, $itemid, $newvalue) {
 function set_course_visible($courseid, $visibility) {
     global $DB;
 
-    $sections = $DB->get_records("course_sections", array("course"=>$courseid));
+    $sections = $DB->get_records("course_sections", array("course" => $courseid));
     foreach ($sections as $section) {
         if ($section->section != 0) {
             set_section_visible($courseid, $section->section, $visibility);

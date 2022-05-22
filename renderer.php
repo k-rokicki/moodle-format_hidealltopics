@@ -276,10 +276,10 @@ class format_hidealltopics_renderer extends format_section_renderer_base {
             ]);
 
             $leftcontent = '';
-            $o.= html_writer::tag('div', $leftcontent, array('class' => 'left side'));
+            $o .= html_writer::tag('div', $leftcontent, array('class' => 'left side'));
 
             $rightcontent = $this->course_right_content($course);
-            $o.= html_writer::tag('div', $rightcontent, array('class' => 'right side'));
+            $o .= html_writer::tag('div', $rightcontent, array('class' => 'right side'));
 
             $o .= html_writer::end_tag('div');
 

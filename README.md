@@ -14,6 +14,8 @@ into `course/format` directory.
 
 - Version 2022052200
   - Compatibility with Moodle 3.11
+- Version 2022052201
+  - Fix PHP coding style problems
 
 ## About
 
