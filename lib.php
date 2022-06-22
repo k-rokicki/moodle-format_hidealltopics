@@ -463,7 +463,7 @@ class format_hidealltopics extends format_base {
         } else if (!empty($id)) {
             $params = array('id' => $id);
         } else {
-            print_error('unspecifycourseid', 'error');
+            return;
         }
 
         $course = $DB->get_record('course', $params, '*', MUST_EXIST);
